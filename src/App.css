@@ -1,0 +1,144 @@
+/* ------------------------------------------
+
+Base layout
+
+------------------------------------------ */
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-grid {
+  display: grid;
+
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  height: 85%;
+  width: 80%;
+}
+
+#add-btn-box {
+  display: flex;
+  align-items: center;
+
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+#navbar-box {
+  display: flex;
+  justify-content: right;
+  padding-right: 15%;
+
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 9;
+  grid-column-end: 3;
+}
+#lookup-box {
+
+  grid-row-start: 1;
+  grid-column-start: 6;
+
+  grid-row-end: 3;
+  grid-column-end: 10;
+}
+#table-box {
+  padding-right: 2%;
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 8;
+  grid-column-end: 10;
+}
+#footer-box {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 2%;
+  justify-content: flex-end;
+
+  grid-row-start: 8;
+  grid-column-start: 4;
+
+  grid-row-end: 9;
+  grid-column-end: 10;
+}
+
+#footer {
+  font-family:  sans-serif;
+  font-size: 16px;
+}
+
+/* ------------------------------------------
+
+Tablet Layout
+
+------------------------------------------ */
+@media screen and (max-width: 1300px) {
+  .main-grid {
+    width: 100%;
+  }
+}
+/* ------------------------------------------
+
+Smartphone Layout
+
+------------------------------------------ */
+
+@media screen and (max-width: 450px) {
+  .main-grid {
+    display: grid;
+
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr;
+
+    height: 100%;
+  }
+
+  #navbar-box {
+    background-color: #b6a865;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 6;
+    
+
+    padding: 0;
+  }
+
+  #add-btn-box {
+    visibility: hidden;
+  }
+
+  #lookup-box {
+
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 6;
+  }
+
+  #table-box {
+    background-color: #e7e75b;
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 9;
+    grid-column-end: 6;
+  }
+
+  #footer-box {
+    visibility: hidden;
+  }
+}
+

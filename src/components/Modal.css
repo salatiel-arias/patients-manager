@@ -1,0 +1,57 @@
+.std-button {
+    width: 15vmin;
+    height: 5vmin;
+    border-radius: 1.5vmin;
+    border: none;
+    font-size: 2.4vmin;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+#close-color {
+    background-color: #b8b8b8;
+}
+
+#close-color:hover {
+    background-color: #979797;
+}
+
+#add-button {
+    background-color: #096cde;
+    font-weight: bold;
+}
+
+#add-button:hover {
+    background-color: #095fc3;
+}
+
+#modal-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vmin;
+    height: 90vh;
+    width:  80vw;
+    top: 5vh;
+    left: 10vw;
+    box-shadow: 1px 1px 4px #999999;
+    z-index: 11;
+    background-color: white;
+}
+
+#modal-content {   
+    width: 90%;
+    height: 90%;
+}
+
+#modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
