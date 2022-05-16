@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Patients Manager
 
 Patients managing tool for doctor's office
 
