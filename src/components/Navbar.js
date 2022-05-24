@@ -1,49 +1,46 @@
 import "./Navbar.css";
-import PatientsSvg from "./resources/patients-icon.svg";
-import StatisticsSvg from "./resources/statistics-icon.svg";
-import AccountingSvg from "./resources/accounting-icon.svg";
+import profile from "./resources/profile.svg"
+import home from "./resources/home.svg";
+import statistics from "./resources/statistics.svg";
+import accounting from "./resources/accounting.svg";
 import { useState } from "react";
 
-export default function Navbar() {
-  const [activeItem, setActiveItem] = useState(1);
+export default function Navbar({selection, setSelection}) {
 
   return (
     <>
       <div className="navbar-container">
-        <div className="navbar-user">
-          Dra.
-          <br />
-          Jocelyn
-          <br />
-          Arias
-          <br />
-          Alarcon
-          <br />
-          <span id="nabla">&#8711;</span>
+      <div
+          className={
+            selection === 1 ? "navbar-item navbar-active" : "navbar-item"
+          }
+          onClick={()=>(setSelection(1))}
+        >
+          <img id="profile-svg" className="navbar-svg" src={profile} />
         </div>
         <div
           className={
-            activeItem === 1 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 2 ? "navbar-item navbar-active" : "navbar-item"
           }
-          onClick={()=>(setActiveItem(1))}
+          onClick={()=>(setSelection(2))}
         >
-          <img className="navbar-svg" src={PatientsSvg} />
+          <img className="navbar-svg" src={home} />
         </div>
         <div
           className={
-            activeItem === 2 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 3 ? "navbar-item navbar-active" : "navbar-item"
           }
-          onClick={()=>(setActiveItem(2))}
+          onClick={()=>(setSelection(3))}
         >
-          <img className="navbar-svg" src={StatisticsSvg} />
+          <img className="navbar-svg" src={statistics} />
         </div>
         <div
           className={
-            activeItem === 3 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 4 ? "navbar-item navbar-active" : "navbar-item"
           }
-          onClick={()=>(setActiveItem(3))}
+          onClick={()=>(setSelection(4))}
         >
-          <img className="navbar-svg" src={AccountingSvg} />
+          <img className="navbar-svg" src={accounting} />
         </div>
       </div>
     </>

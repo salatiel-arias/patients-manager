@@ -1,0 +1,16 @@
+<svg width="7.5389mm" height="5.875mm" version="1.1" viewBox="0 0 7.5389 5.875" xmlns="http://www.w3.org/2000/svg">
+ <text x="470.65085" y="9.3731899" fill="#2d3950" font-family="'Helvetica CE 35 Thin'" font-size="6.0845px" letter-spacing="0px" stroke="#2d3950" stroke-width=".307" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="470.65085" y="9.3731899" fill="#2d3950" stroke="#2d3950" stroke-width=".307"/></text>
+ <g transform="matrix(.70275 0 0 .70275 371.07 -51.854)">
+  <text x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" stroke-width=".26458"/></text>
+ </g>
+ <g transform="translate(439.77 -77.707)">
+  <text x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" letter-spacing="0px" stroke-width=".18594" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" stroke-width=".18594"/></text>
+ </g>
+ <g transform="translate(472.22 -128.78)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width=".865">
+  <g stroke-width=".865">
+   <path d="m-471.79 129.21h6.6739"/>
+   <path d="m-471.79 131.71h6.6739"/>
+   <path d="m-471.79 134.22h6.6739"/>
+  </g>
+ </g>
+</svg>

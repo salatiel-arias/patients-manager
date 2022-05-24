@@ -1,0 +1,18 @@
+<svg width="10.217mm" height="9.8927mm" version="1.1" viewBox="0 0 10.217 9.8926" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(530.04 -156.52)">
+  <text x="17.48489" y="90.59935" fill="#2d3950" font-family="'Helvetica CE 35 Thin'" font-size="6.0845px" letter-spacing="0px" stroke="#2d3950" stroke-width=".307" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="17.48489" y="90.59935" fill="#2d3950" stroke="#2d3950" stroke-width=".307"/></text>
+  <g transform="matrix(.70275 0 0 .70275 -82.099 29.372)">
+   <text x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" stroke-width=".26458"/></text>
+  </g>
+  <g transform="translate(-13.394 3.5192)">
+   <text x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" letter-spacing="0px" stroke-width=".18594" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" stroke-width=".18594"/></text>
+  </g>
+  <g transform="translate(-13.394 5.6315)"></g>
+  <g transform="matrix(1.2809 0 0 1.2809 75.77 -46.413)">
+   <g transform="matrix(.43708 0 0 .43394 -263.99 92.323)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.9288">
+    <rect x="-474.77" y="159.51" width="11.591" height="9.6719" ry="1.2528" stroke-linejoin="round"/>
+    <path d="m-477.14 158.25 8.1606-4.9426m8.1606 4.9482-8.1606-4.9426"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -3,7 +3,7 @@
     height: 5vmin;
     border-radius: 1.5vmin;
     border: none;
-    font-size: 2.4vmin;
+    font-size: calc(10px + 1vmin);
     color: whitesmoke;
     font-weight: lighter;
 }
@@ -31,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 3vmin;
+    border-radius: 2vmin;
     height: 90vh;
     width:  80vw;
     top: 5vh;
@@ -52,6 +52,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(10px);
+    background-color: rgba(77,77,77,0.5);
     z-index: 10;
 }

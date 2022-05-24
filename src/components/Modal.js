@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Modal.css";
 import "./Table.css";
 
-function openModalWindow(closeWindowCallback) {
+function ModalWindow({closeWindowCallback}) {
   return (
     <>
-      <div id="modal-background">background</div>
+      <div id="modal-background"></div>
       <div id="modal-container">
         <div id="modal-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,7 +40,7 @@ export default function Modal({ modalType }) {
       >
         + anadir
       </button>
-      {modalIsActive ? openModalWindow(() => setModalIsActive(false)) : null}
+      {modalIsActive ? <ModalWindow closeWindowCallback={() => setModalIsActive(false)} /> : null}
     </>
   );
 }

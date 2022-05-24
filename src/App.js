@@ -3,8 +3,10 @@ import "./App.css";
 import Table from "./components/Table.js";
 import Modal from "./components/Modal.js";
 import Navbar from "./components/Navbar";
+import Lookup from "./components/Lookup";
 
-function App() {
+function RenderHome({callback}) {
+  const [menuSelection, setMenuSelection] = useState();
   const table_headers = ["id", "nombre", "edad", "sexo"];
   const entries = [
     { id: 0, name: "Lupe Lopez", age: 33, gender: "female" },
@@ -24,17 +26,30 @@ function App() {
     { id: 15, name: "Martina Gonzalez", age: 25, gender: "female" },
     { id: 16, name: "Irma Perez", age: 50, gender: "female" },
   ];
-
-
   return (
     <>
-      <div className="main-grid">
-        <div id="add-btn-box"><Modal/></div>
-        <div id="navbar-box"><Navbar/></div>
-        <div id="lookup-box">lookup-box</div>
-        <div id="table-box"><Table headers={table_headers} entries={entries} /></div>
-        <div id="footer-box"><span id="footer">Powered by ProdigalBit</span></div>
+      <div className="content-grid">
+        <div id="add-btn-box">
+          <Modal />
+        </div>
+        <div id="lookup-box">
+          <Lookup />
+        </div>
+        <div id="table-box">
+          <Table headers={table_headers} entries={entries} />
+        </div>
+        <div id="footer-box">brand?</div>
       </div>
+    </>
+  );
+}
+
+function App() {
+  const [navbarSelection, setNavbarSelection] = useState(2);
+  return (
+    <>
+      <Navbar selection={navbarSelection} setSelection={(sel)=>(setNavbarSelection(sel))} />
+      {navbarSelection == 2? <RenderHome /> : <div className="placeholder"/>}      
     </>
   );
 }

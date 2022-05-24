@@ -1,0 +1,19 @@
+<svg width="12.399mm" height="12.411mm" version="1.1" viewBox="0 0 12.399 12.411" xmlns="http://www.w3.org/2000/svg">
+ <text x="540.36084" y="-126.70924" fill="#2d3950" font-family="'Helvetica CE 35 Thin'" font-size="6.0845px" letter-spacing="0px" stroke="#2d3950" stroke-width=".307" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="540.36084" y="-126.70924" fill="#2d3950" stroke="#2d3950" stroke-width=".307"/></text>
+ <g transform="matrix(.70275 0 0 .70275 440.78 -187.94)">
+  <text x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" stroke-width=".26458"/></text>
+ </g>
+ <g transform="translate(509.48 -213.79)">
+  <text x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" letter-spacing="0px" stroke-width=".18594" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" stroke-width=".18594"/></text>
+ </g>
+ <g transform="translate(-53.348 -91.449)">
+  <g transform="matrix(1.2759,0,0,1.2771,-2.79,-58.101)" stroke-width=".78338">
+   <circle cx="48.858" cy="121.96" r="4.4786" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width=".76095"/>
+  </g>
+  <g transform="translate(528.07,-125.86)">
+   <text transform="matrix(1.2759,0,0,1.2771,-530.86,67.759)" x="47.07811" y="123.98109" fill="#ffffff" font-family="'Helvetica CE 35 Thin'" font-size="5.651px" letter-spacing="0px" stroke="#ffffff" stroke-width=".36853" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="47.07811" y="123.98109" fill="#ffffff" stroke="#ffffff" stroke-width=".36853">S</tspan></text>
+   <rect x="-468.76" y="220.3" width=".4881" height=".33472" rx=".030629" ry=".028899" fill="none" stroke="#fff" stroke-width=".38213"/>
+   <rect transform="scale(1,-1)" x="-468.76" y="-226.64" width=".4881" height=".33472" rx=".030629" ry=".028899" fill="none" stroke="#fff" stroke-width=".38213"/>
+  </g>
+ </g>
+</svg>

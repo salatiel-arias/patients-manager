@@ -1,0 +1,25 @@
+<svg width="10.378mm" height="12.014mm" version="1.1" viewBox="0 0 10.378 12.014" xmlns="http://www.w3.org/2000/svg">
+ <text x="526.21753" y="-70.967033" fill="#2d3950" font-family="'Helvetica CE 35 Thin'" font-size="6.0845px" letter-spacing="0px" stroke="#2d3950" stroke-width=".307" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="526.21753" y="-70.967033" fill="#2d3950" stroke="#2d3950" stroke-width=".307"/></text>
+ <g transform="matrix(.70275 0 0 .70275 426.63 -132.19)">
+  <text x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" stroke-width=".26458"/></text>
+ </g>
+ <g transform="translate(495.34 -158.05)">
+  <text x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" letter-spacing="0px" stroke-width=".18594" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" stroke-width=".18594"/></text>
+ </g>
+ <g transform="translate(508.08 -177.49)">
+  <g transform="matrix(1.2759,0,0,1.2771,-565.23,58.822)" stroke="#fff">
+   <path d="m45.12 93.25v8.7496h7.4762v-7.0662l-1.4183-1.6834z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".65804"/>
+   <g transform="matrix(1.0351,0,0,1.0351,76.945,36.438)" fill="#2d3950" stroke-width=".78338">
+    <g stroke-width=".78338">
+     <g transform="translate(-.28455)" fill="#fff" stroke="none">
+      <rect x="-25.193" y="58.357" width=".80587" height="3.4124" rx="0" ry="0"/>
+      <rect x="-26.625" y="59.925" width=".80587" height="1.8439" rx="0" ry="0"/>
+      <rect x="-28.056" y="58.801" width=".80587" height="2.9681" rx="0" ry="0"/>
+      <rect x="-29.488" y="59.334" width=".80587" height="2.4356" rx="0" ry="0"/>
+     </g>
+    </g>
+   </g>
+   <path d="m51.178 93.25v1.7232h1.354z" fill="#fff" stroke-linejoin="round" stroke-width=".64815"/>
+  </g>
+ </g>
+</svg>
