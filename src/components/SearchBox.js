@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import "./Lookup.css";
+import "./SearchBox.css";
 
 export default function Lookup() {
   const defaultText = "buscar paciente...";

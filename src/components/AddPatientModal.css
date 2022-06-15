@@ -1,12 +1,4 @@
-.std-button {
-    width: 15vmin;
-    height: 5vmin;
-    border-radius: 1.5vmin;
-    border: none;
-    font-size: calc(10px + 1vmin);
-    color: whitesmoke;
-    font-weight: lighter;
-}
+
 
 #close-color {
     background-color: #b8b8b8;
@@ -17,12 +9,15 @@
 }
 
 #add-button {
-    background-color: #096cde;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #727272;
     font-weight: bold;
 }
 
 #add-button:hover {
     background-color: #095fc3;
+    color: white;
 }
 
 #modal-container {
@@ -52,6 +47,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(77,77,77,0.5);
+    background-color: rgba(0, 0, 0, 0.76);
     z-index: 10;
 }

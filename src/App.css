@@ -24,71 +24,55 @@ Base layout
 .content-grid {
   display: grid;
 
-  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   height: 85%;
   width: 85%;
 }
 
-#navbar-box {
+#add-btn-container {
   display: flex;
-  justify-content: right;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 
   grid-row-start: 1;
+  grid-row-end: 2;
+
   grid-column-start: 1;
-
-  grid-row-end: 9;
-  grid-column-end: 3;
-}
-
-#add-btn-box {
-  display: flex;
-  align-items: center;
-
-  grid-row-start: 1;
-  grid-column-start: 2;
-
-  grid-row-end: 3;
   grid-column-end: 5;
 }
 
-#lookup-box {
+#search-container {
   display: flex;
   align-items: center;
   justify-content: right;
+  padding-left: 5%;
+  padding-right: 5%;
 
-  grid-row-start: 1;
-  grid-column-start: 3;
-
+  grid-row-start: 2;
   grid-row-end: 3;
+
+  grid-column-start: 1;  
   grid-column-end: 5;
 }
-#table-box {
+
+#patientlist-container {
   grid-row-start: 3;
-  grid-column-start: 1;
+  grid-row-end: 11;
 
-  grid-row-end: 9;
+  grid-column-start: 1;  
   grid-column-end: 5;
 }
-#footer-box {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
 
-  grid-row-start: 8;
-  grid-column-start: 3;
+#info-panel-container {
+  grid-row-start: 1;
+  grid-row-end: 11;
 
-  grid-row-end: 9;
-  grid-column-end: 9;
+  grid-column-start: 5;  
+  grid-column-end: 13;
 }
-
-#brand {
-  height: 20%;
-  width: 20%;
-  object-fit: contain;
-}
-
 /* ------------------------------------------
 
 Tablet Layout
@@ -106,6 +90,7 @@ Tablet Layout
   .placeholder {
     width: 95%;
   }
+
 }
 /* ------------------------------------------
 
@@ -124,7 +109,7 @@ Smartphone Layout
     padding-left: 2%;
   }
 
-  #navbar-box {
+  #navbar-container {
     background-color: #b6a865;
     grid-row-start: 1;
     grid-column-start: 1;
@@ -136,11 +121,11 @@ Smartphone Layout
     padding: 0;
   }
 
-  #add-btn-box {
+  #add-btn-container {
     visibility: hidden;
   }
 
-  #lookup-box {
+  #search-container {
     grid-row-start: 2;
     grid-column-start: 1;
 
@@ -150,7 +135,7 @@ Smartphone Layout
     background-color: bisque;
   }
 
-  #table-box {
+  #patientlist-container {
     background-color: #e7e75b;
     grid-row-start: 3;
     grid-column-start: 1;
@@ -159,8 +144,5 @@ Smartphone Layout
     grid-column-end: 6;
   }
 
-  #footer-box {
-    visibility: hidden;
-  }
 }
 

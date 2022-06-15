@@ -3,12 +3,10 @@ import profile from "./resources/profile.svg"
 import home from "./resources/home.svg";
 import statistics from "./resources/statistics.svg";
 import accounting from "./resources/accounting.svg";
-import { useState } from "react";
 
 export default function Navbar({selection, setSelection}) {
 
   return (
-    <>
       <div className="navbar-container">
       <div
           className={
@@ -43,6 +41,5 @@ export default function Navbar({selection, setSelection}) {
           <img className="navbar-svg" src={accounting} />
         </div>
       </div>
-    </>
   );
 }

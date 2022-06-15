@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.css";
-import "./Table.css";
+import "./AddPatientModal.css";
 
 function ModalWindow({closeWindowCallback}) {
   return (
@@ -21,14 +20,14 @@ function ModalWindow({closeWindowCallback}) {
           id="close-color"
           onClick={() => closeWindowCallback()}
         >
-          cerrar
+          cancelar
         </button>
       </div>
     </>
   );
 }
 
-export default function Modal({ modalType }) {
+export default function AddPatientModal({ modalType }) {
   const [modalIsActive, setModalIsActive] = useState(false);
 
   return (
@@ -38,7 +37,7 @@ export default function Modal({ modalType }) {
         id="add-button"
         onClick={() => setModalIsActive(true)}
       >
-        + anadir
+        nuevo paciente
       </button>
       {modalIsActive ? <ModalWindow closeWindowCallback={() => setModalIsActive(false)} /> : null}
     </>

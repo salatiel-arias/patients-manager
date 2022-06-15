@@ -1,16 +1,9 @@
-<svg width="7.5389mm" height="5.875mm" version="1.1" viewBox="0 0 7.5389 5.875" xmlns="http://www.w3.org/2000/svg">
- <text x="470.65085" y="9.3731899" fill="#2d3950" font-family="'Helvetica CE 35 Thin'" font-size="6.0845px" letter-spacing="0px" stroke="#2d3950" stroke-width=".307" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="470.65085" y="9.3731899" fill="#2d3950" stroke="#2d3950" stroke-width=".307"/></text>
- <g transform="matrix(.70275 0 0 .70275 371.07 -51.854)">
-  <text x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.89648" y="47.215233" fill="#333333" font-family="Laksaman" font-size="6.024px" font-weight="bold" stroke-width=".26458"/></text>
- </g>
- <g transform="translate(439.77 -77.707)">
-  <text x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" letter-spacing="0px" stroke-width=".18594" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="89.078468" y="66.737831" fill="#333333" font-family="Laksaman" font-size="4.2333px" font-weight="bold" stroke-width=".18594"/></text>
- </g>
- <g transform="translate(472.22 -128.78)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width=".865">
-  <g stroke-width=".865">
-   <path d="m-471.79 129.21h6.6739"/>
-   <path d="m-471.79 131.71h6.6739"/>
-   <path d="m-471.79 134.22h6.6739"/>
+<svg width="10.571mm" height="10.571mm" version="1.1" viewBox="0 0 10.571 10.571" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-157.05 -126.71)">
+  <g transform="matrix(.5881 0 0 .5881 99.892 112.8)" stroke-linecap="round" stroke-linejoin="round">
+   <circle cx="106.18" cy="32.644" r="8.137" fill="none" stroke="#fff" stroke-width="1.7004"/>
+   <path d="m104.09 33.851c-1.9463 0-3.5135 1.5672-3.5135 3.5135v1.1674a8.137 8.137 0 0 0 5.6116 2.249 8.137 8.137 0 0 0 5.6121-2.249v-1.1674c0-1.9463-1.5672-3.5135-3.5135-3.5135z" fill="#fff" stroke-width=".79068"/>
+   <circle cx="106.18" cy="29.727" r="3.0798" fill="#fff" stroke-width=".79068"/>
   </g>
  </g>
 </svg>

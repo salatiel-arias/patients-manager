@@ -3,4 +3,14 @@ body {
     font-family: 'Ubuntu';
   
   }
+
+.std-button {
+  height: 5vmin;
+  width: 15vmin;
+  border-radius: 1.5vmin;
+  border: none;
+  font-size: calc(10px + 1vmin);
+  color: whitesmoke;
+  font-weight: lighter;
+}
   
