@@ -5,55 +5,46 @@ import PatientsList from "./components/PatientsList.js";
 import SearchBox from "./components/SearchBox.js";
 import InfoPanel from "./components/InfoPanel.js";
 import Navbar from "./components/Navbar.js";
-
-  const entries = [
-    { id: 0, name: "Lupe Lopez", age: 33, gender: "female" },
-    { id: 1, name: "Sara Garcia", age: 45, gender: "female" },
-    { id: 2, name: "Irma Perez", age: 50, gender: "female" },
-    { id: 3, name: "Rogelia Sanchez", age: 41, gender: "female" },
-    { id: 5, name: "Martina Gonzalez", age: 25, gender: "female" },
-    { id: 6, name: "Lupe Lopez", age: 33, gender: "female" },
-    { id: 7, name: "Sara Garcia", age: 45, gender: "female" },
-    { id: 8, name: "Irma Perez", age: 50, gender: "female" },
-    { id: 9, name: "Rogelia Sanchez", age: 41, gender: "female" },
-    { id: 10, name: "Martina Gonzalez", age: 25, gender: "female" },
-    { id: 11, name: "Irma Perez", age: 50, gender: "female" },
-    { id: 12, name: "Sara Garcia", age: 45, gender: "female" },
-    { id: 13, name: "Irma Perez", age: 50, gender: "female" },
-    { id: 14, name: "Rogelia Sanchez", age: 41, gender: "female" },
-    { id: 15, name: "Martina Gonzalez", age: 25, gender: "female" },
-    { id: 16, name: "Irma Perez", age: 50, gender: "female" },
-  ];
+import { entries } from "./Database.js";
 
 function RenderHome({
-  patientSelection,
-  setPatientSelection,
-  selectionIndex,
-  setSelectionIndex,
+  patientsArray,
+  setPatientsArray,
+  selectedPatientByIndex,
+  setSelectedPatientByIndex,
+  patientCardMenu,
+  setPatientCardMenu,
 }) {
-  function confirmIndex(index) {
-    setSelectionIndex(index);
-  }
   return (
     <div className="content-grid">
       <div id="add-btn-container">
-        <AddPatientModal />
+        <AddPatientModal
+          addNewPatient={(entry) => {
+            var new_entry = entry;
+            new_entry.index = patientsArray.length;
+            setPatientsArray([...patientsArray, new_entry]);
+          }}
+        />
       </div>
       <div id="search-container">
         <SearchBox />
       </div>
       <div id="patientlist-container">
         <PatientsList
-          entries={entries}
-          selection={patientSelection}
-          setSelection={(selection) => {
-            setPatientSelection(selection.id);
-            confirmIndex(selection.index);
+          entries={patientsArray}
+          selection={selectedPatientByIndex}
+          setSelection={setSelectedPatientByIndex}
+          cardMenu={patientCardMenu}
+          setCardMenu={setPatientCardMenu}
+          deletePatient={(id) => {
+            console.log(id)
+            console.log(patientsArray.filter((item) => item.id !== id))
+            setPatientsArray(patientsArray.filter((item) => item.id !== id));
           }}
         />
       </div>
       <div id="info-panel-container">
-        <InfoPanel info={entries[selectionIndex]} />
+        <InfoPanel info={patientsArray[selectedPatientByIndex]} />
       </div>
     </div>
   );
@@ -61,20 +52,29 @@ function RenderHome({
 
 function App() {
   const [navbarSelection, setNavbarSelection] = useState(2);
-  const [patientSelection, setPatientSelection] = useState(0);
-  const [selectionIndex, setSelectionIndex] = useState(0);
+  const [selectedPatientByIndex, setSelectedPatientByIndex] = useState(0);
+  const [patientsArray, setPatientsArray] = useState(entries);
+  const [patientCardMenu, setPatientCardMenu] = useState({
+    isActive: false,
+    position: [0, 0],
+  });
+
   return (
     <>
       <Navbar
         selection={navbarSelection}
-        setSelection={(sel) =>setNavbarSelection(sel)}
+        setSelection={(sel) => setNavbarSelection(sel)}
       />
       {navbarSelection === 2 ? (
         <RenderHome
-          patientSelection={patientSelection}
-          setPatientSelection={(select) => setPatientSelection(select)}
-          selectionIndex={selectionIndex}
-          setSelectionIndex={(select) => setSelectionIndex(select)}
+          patientsArray={patientsArray}
+          selectedPatientByIndex={selectedPatientByIndex}
+          setSelectedPatientByIndex={(select) =>
+            setSelectedPatientByIndex(select)
+          }
+          setPatientsArray={(new_entries) => setPatientsArray(new_entries)}
+          patientCardMenu={patientCardMenu}
+          setPatientCardMenu={(props) => setPatientCardMenu(props)}
         />
       ) : (
         <div className="placeholder" />

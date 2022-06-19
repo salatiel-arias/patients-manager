@@ -1,33 +1,65 @@
 import React, { useState } from "react";
 import "./AddPatientModal.css";
 
-function ModalWindow({closeWindowCallback}) {
+function ModalWindow({ closeWindowCallback, addNewPatient }) {
+  var entry = { name: "", age: 0, gender: "" };
   return (
     <>
       <div id="modal-background"></div>
       <div id="modal-container">
-        <div id="modal-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <div id="modal-body">
+          <div id="basic-info-container">
+            <label>Nombre:</label>
+            <input
+              className="modal-input-field"
+              type="text"
+              onChange={(e) => {
+                entry.name = e.target.value;
+              }}
+            />
+            <label>Edad:</label>
+            <input
+              className="modal-input-field"
+              type="number"
+              onChange={(e) => {
+                entry.age = e.target.value;
+              }}
+            />
+            <label>Sexo:</label>
+            <input
+              className="modal-input-field"
+              type="text"
+              onChange={(e) => {
+                entry.gender = e.target.value;
+              }}
+            />
+          </div>
         </div>
-        <button
-          className="std-button"
-          id="close-color"
-          onClick={() => closeWindowCallback()}
-        >
-          cancelar
-        </button>
+        <div id="modal-footer">
+          <button
+            className="std-button"
+            id="save-button"
+            onClick={() => {
+              addNewPatient(entry);
+              closeWindowCallback();
+            }}
+          >
+            Guardar
+          </button>
+          <button
+            className="std-button"
+            id="close-button"
+            onClick={() => closeWindowCallback()}
+          >
+            Cancelar
+          </button>
+        </div>
       </div>
     </>
   );
 }
 
-export default function AddPatientModal({ modalType }) {
+export default function AddPatientModal({ addNewPatient }) {
   const [modalIsActive, setModalIsActive] = useState(false);
 
   return (
@@ -39,7 +71,12 @@ export default function AddPatientModal({ modalType }) {
       >
         nuevo paciente
       </button>
-      {modalIsActive ? <ModalWindow closeWindowCallback={() => setModalIsActive(false)} /> : null}
+      {modalIsActive ? (
+        <ModalWindow
+          closeWindowCallback={() => setModalIsActive(false)}
+          addNewPatient={addNewPatient}
+        />
+      ) : null}
     </>
   );
 }

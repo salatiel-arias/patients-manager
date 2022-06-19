@@ -14,13 +14,12 @@ export default function Lookup() {
       setTextValue({ text: "", new_input: true });
     else 
       setTextValue({ text: e.target.value, new_input: true });
-
-    console.log(e.target.value);
   }
 
   function handleClickOutside(e) {
     if (lookupRef.current && !lookupRef.current.contains(e.target) & (textValue.text === "")) {
       setTextValue({ text:defaultText, new_input: false })
+      console.log(lookupRef.current)
     }
 
   }
