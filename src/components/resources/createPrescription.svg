@@ -1,15 +1,13 @@
-<svg width="4.3693mm" height="4.3197mm" version="1.1" viewBox="0 0 4.3693 4.3197" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(-97.29 -104.27)">
-  <g transform="translate(133.49 -59.885)">
-   <rect x="-35.536" y="164.28" width="3.581" height="3.581" ry=".23971" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".255"/>
-   <rect x="-36.069" y="164.77" width="3.581" height="3.581" ry=".23971" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".255"/>
-   <g transform="translate(0 .0646)" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".26458px">
-    <path transform="translate(7.2917e-6)" d="m-35.131 165.29 5.58e-4 1.0405"/>
-    <path d="m-34.611 165.81-1.0405-5.6e-4"/>
+<svg width="3.981mm" height="3.981mm" version="1.1" viewBox="0 0 3.981 3.981" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-97.221 -104.68)" stroke="#333" stroke-width=".4">
+  <g transform="translate(133.49,-59.885)" stroke="#333" stroke-linecap="round" stroke-width=".45">
+   <rect x="-36.069" y="164.77" width="3.581" height="3.581" ry=".23971" fill="#fff" stroke-linejoin="round"/>
+   <g transform="translate(0 .0646)" fill="none" stroke-linecap="square">
+    <path d="m-34.936 165.4 4.51e-4 0.84121"/>
+    <path d="m-34.516 165.82-0.84122-4.5e-4"/>
    </g>
-   <g fill="none" stroke="#000" stroke-linecap="round" stroke-width=".26458px">
-    <path d="m-33.013 166.4-1.0405-5.6e-4"/>
-    <path d="m-33.013 166.99-2.3333-5.6e-4"/>
+   <g fill="none">
+    <path d="m-33.129 166.81-1.0405-5.6e-4"/>
     <path d="m-33.013 167.58-2.3333-5.6e-4"/>
    </g>
   </g>

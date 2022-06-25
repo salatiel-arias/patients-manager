@@ -10,36 +10,43 @@ export default function Navbar({selection, setSelection}) {
       <div className="navbar-container">
       <div
           className={
-            selection === 1 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 1 ? "navbar-active" : "navbar-item"
           }
           onClick={()=>(setSelection(1))}
         >
-          <img id="profile-svg" className="navbar-svg" src={profile} />
+          <img className="navbar-svg" src={profile} />
         </div>
+
+
         <div
           className={
-            selection === 2 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 2 ? "navbar-active " : "navbar-item"
           }
           onClick={()=>(setSelection(2))}
         >
           <img className="navbar-svg" src={home} />
         </div>
+
+
         <div
           className={
-            selection === 3 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 3 ? "navbar-active" : "navbar-item"
           }
           onClick={()=>(setSelection(3))}
         >
           <img className="navbar-svg" src={statistics} />
         </div>
+
+
         <div
           className={
-            selection === 4 ? "navbar-item navbar-active" : "navbar-item"
+            selection === 4 ? "navbar-active" : "navbar-item"
           }
           onClick={()=>(setSelection(4))}
         >
           <img className="navbar-svg" src={accounting} />
         </div>
+
       </div>
   );
 }

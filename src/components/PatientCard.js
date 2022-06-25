@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import editSvg from "./resources/editPatient.svg"
 import createPrescriptionSvg from "./resources/createPrescription.svg"
 import deleteSvg from "./resources/deletePatient.svg"
@@ -16,7 +15,6 @@ function CardMenu({ isCardActive, cardMenu, deletePatient}) {
 }
 
 export default function PatientCard(props) {
-  const cardMenuRef = useRef();
 
   function setCardMenuPosition(e) {      
     const position = e.target.getBoundingClientRect();

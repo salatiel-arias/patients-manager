@@ -1,10 +1,10 @@
-<svg width="3.836mm" height="3.836mm" version="1.1" viewBox="0 0 3.836 3.836" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(-97.148 -103.52)">
-  <g transform="translate(133.39 -72.558)" stroke="#000" stroke-linecap="round">
-   <rect x="-36.11" y="176.21" width="3.581" height="3.581" ry=".23971" fill="#fff" stroke-linejoin="round" stroke-width=".255"/>
-   <g transform="matrix(1.1648 0 0 1.1636 10.276 -13.189)" fill="none" stroke-width=".22726px">
-    <path d="m-39 163.59 1.4306 1.4306"/>
-    <path d="m-37.569 163.59-1.4306 1.4306"/>
+<svg width="3.6568mm" height="3.6568mm" version="1.1" viewBox="0 0 3.6568 3.6568" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.94878 0 0 .94878 -92.168 -99.25)" stroke="#333" stroke-width=".4">
+  <g transform="translate(133.49,-59.885)" stroke="#333" stroke-linecap="round" stroke-width=".40051">
+   <rect x="-36.083" y="164.76" width="3.3272" height="3.3272" ry=".22272" fill="#fff" stroke-linejoin="round"/>
+   <g transform="translate(0 .0646)" fill="none">
+    <path d="m-33.649 167.13-1.5419-1.5428"/>
+    <path d="m-35.191 167.13 1.5419-1.5428"/>
    </g>
   </g>
  </g>

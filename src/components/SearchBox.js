@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from "react";
+import { entries } from "../Database.js";
 import "./SearchBox.css";
 
-export default function Lookup() {
+export default function SearchBox({list, updateDisplayedList}) {
   const defaultText = "buscar paciente...";
   const lookupRef = useRef();
   const [textValue, setTextValue] = useState({
@@ -10,10 +11,21 @@ export default function Lookup() {
   });
 
   function handleTextInput(e) {
-    if (!textValue.new_input) 
-      setTextValue({ text: "", new_input: true });
-    else 
       setTextValue({ text: e.target.value, new_input: true });
+      var capitalized = e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
+  
+      console.log(capitalized);
+      console.log(entries.filter((item)=> item.name.includes(capitalized)));
+      updateDisplayedList(entries.filter((item)=> item.name.includes(capitalized)))
+  
+
+  }
+
+  function handleClick(e) {
+    if (e.target.value === defaultText) {
+      setTextValue({ text: "", new_input: true });
+    }
+
   }
 
   function handleClickOutside(e) {
@@ -41,6 +53,7 @@ export default function Lookup() {
         type="text"
         value={textValue.text}
         onChange={handleTextInput}
+        onClick={handleClick}
       />
     </>
   );

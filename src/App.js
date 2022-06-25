@@ -23,11 +23,13 @@ function RenderHome({
             var new_entry = entry;
             new_entry.index = patientsArray.length;
             setPatientsArray([...patientsArray, new_entry]);
+            entries.push(entry);
+
           }}
         />
       </div>
       <div id="search-container">
-        <SearchBox />
+        <SearchBox list={patientsArray} updateDisplayedList={(newArray)=>setPatientsArray(newArray)}/>
       </div>
       <div id="patientlist-container">
         <PatientsList
@@ -37,14 +39,26 @@ function RenderHome({
           cardMenu={patientCardMenu}
           setCardMenu={setPatientCardMenu}
           deletePatient={(id) => {
-            console.log(id)
-            console.log(patientsArray.filter((item) => item.id !== id))
-            setPatientsArray(patientsArray.filter((item) => item.id !== id));
+            console.log(id);
+            console.log(patientsArray.filter((item) => item.id !== id));
+            setPatientsArray([
+              ...patientsArray.filter(
+                (item) => patientsArray.indexOf(item) !== id
+              ),
+            ]);
+            console.log(patientsArray);
+            setPatientCardMenu({isActive: false, position: [0,0]})
           }}
         />
       </div>
       <div id="info-panel-container">
-        <InfoPanel info={patientsArray[selectedPatientByIndex]} />
+        <InfoPanel
+          info={
+            selectedPatientByIndex < patientsArray.length
+              ? patientsArray[selectedPatientByIndex]
+              : null
+          }
+        />
       </div>
     </div>
   );
@@ -76,9 +90,12 @@ function App() {
           patientCardMenu={patientCardMenu}
           setPatientCardMenu={(props) => setPatientCardMenu(props)}
         />
-      ) : (
-        <div className="placeholder" />
-      )}
+      ) : null}
+      {navbarSelection === 1 ? (
+        <div className="placeholder">
+          <button className="std-button" onClick={()=>(console.log(entries))}></button>
+        </div>
+      ) : null}
     </>
   );
 }

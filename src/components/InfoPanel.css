@@ -31,6 +31,7 @@
 }
 
 #box2 {
+    min-width: 250px;
     grid-row-start: 1;
     grid-row-end: 2;
   
