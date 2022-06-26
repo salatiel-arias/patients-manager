@@ -58,4 +58,25 @@
 }
 
 
+.infobox-files-display {
+    margin-top: 2%;
+    width: 90%;
+    height: 70%;
+}
 
+.infobox-dragover {
+    margin-top: 2%;
+    width: 90%;
+    height: 70%;
+    border: 8px solid #cecece;
+    border-style: dashed; 
+    vertical-align: middle;
+    color: #cecece;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#infobox-input-file {
+    display: none;
+}
